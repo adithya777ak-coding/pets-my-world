@@ -463,7 +463,7 @@
         card.className = 'product-card';
         card.innerHTML = `
           <span class="discount-badge">${p.discount}</span>
-          <img src="${p.img}" alt="${p.name}" class="product-img">
+          <img src="${p.img}" alt="${p.name}" class="product-img" onerror="this.src='https://via.placeholder.com/400x250?text=Pets+My+World';">
           <div class="product-brand">${p.brand}</div>
           <div class="product-title">${p.name}</div>
           <div class="product-category">${p.mainCategory} • ${p.subCategory}</div>
