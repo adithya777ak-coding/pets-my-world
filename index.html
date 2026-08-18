@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pets my world - Premium Pet Store</title>
 
-  <!-- Favicon / Tab Logo -->
+  <!-- Browser Tab Logo (Favicon) -->
   <link rel="icon" type="image/png" href="logo.png">
+  <link rel="shortcut icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
 
-  <!-- Schema Markup for Google Search -->
+  <!-- Schema Markup for Search Engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -297,7 +299,7 @@
 
   <!-- WELCOME OVERLAY SCREEN -->
   <div id="welcomeOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 9999; text-align: center; padding: 20px; box-sizing: border-box;">
-    <img src="logo.png" alt="Pets my world Logo" onerror="this.src='https://via.placeholder.com/100?text=PetsMyWorld'" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <img src="logo.png" alt="Pets my world Logo" onerror="this.src='https://via.placeholder.com/100?text=PetsMyWorld'" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
     <h1 style="color: #2563eb; margin: 0 0 10px 0;">Welcome to Pets my world</h1>
     <p style="color: #4b5563; max-width: 450px; margin-bottom: 20px;">Your one-stop destination for premium pet supplies, food, and accessories.</p>
     
@@ -406,14 +408,9 @@
       { id: 105, name: "Drools Focus Adult Superpremium 4kg", brand: "Drools", mainCategory: "Dogs", subCategory: "Dry Food", originalPrice: 1800, price: 1550, discount: "14% OFF", quantity: 15, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
       { id: 106, name: "Drools Puppy Chicken & Egg 3kg", brand: "Drools", mainCategory: "Dogs", subCategory: "Dry Food", originalPrice: 799, price: 699, discount: "12% OFF", quantity: 20, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
       { id: 107, name: "Drools Real Chicken Sausage 150g", brand: "Drools", mainCategory: "Dogs", subCategory: "Wet Food", originalPrice: 99, price: 85, discount: "14% OFF", quantity: 28, img: "https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=400" },
-      { id: 108, name: "Drools Absolute Calcium Tablets 110 Pcs", brand: "Drools", mainCategory: "Dogs", subCategory: "Hygiene", originalPrice: 450, price: 390, discount: "13% OFF", quantity: 10, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
 
-      // --- DOG FOOD: PUREPET ---
+      // --- DOG FOOD: PUREPET & MEAT UP ---
       { id: 109, name: "Purepet Chicken & Vegetables Adult 10kg", brand: "Purepet", mainCategory: "Dogs", subCategory: "Dry Food", originalPrice: 1299, price: 1099, discount: "15% OFF", quantity: 10, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
-      { id: 110, name: "Purepet Puppy Chicken & Egg 3kg", brand: "Purepet", mainCategory: "Dogs", subCategory: "Dry Food", originalPrice: 599, price: 499, discount: "16% OFF", quantity: 14, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
-      { id: 111, name: "Purepet Chicken Gravy Canned Wet Food 400g", brand: "Purepet", mainCategory: "Dogs", subCategory: "Wet Food", originalPrice: 120, price: 99, discount: "17% OFF", quantity: 22, img: "https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=400" },
-
-      // --- DOG FOOD: MEAT UP ---
       { id: 113, name: "Meat Up Adult Dog Food 3kg", brand: "Meat Up", mainCategory: "Dogs", subCategory: "Dry Food", originalPrice: 699, price: 599, discount: "14% OFF", quantity: 16, img: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" },
 
       // --- DOG FOOD: ROYAL CANIN & FARMINA ---
@@ -621,7 +618,8 @@
       const invoiceHtml = `
         <div id="invoiceModal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 9999;">
           <div style="background: white; padding: 25px; border-radius: 10px; width: 90%; max-width: 500px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <div style="text-align: center; border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 15px;">
+            <div style="text-align: center; border-bottom: 2px solid #2563eb; padding-bottom: 12px; margin-bottom: 15px;">
+              <img src="logo.png" alt="Pets my world Logo" onerror="this.style.display='none'" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 8px;">
               <h2 style="color: #2563eb; margin: 0;">🐾 Pets my world</h2>
               <p style="font-size: 0.8rem; color: #64748b; margin: 4px 0;">No. 12, Main Road, Bangalore | Phone: +91 98765 43210</p>
               <p style="font-size: 0.85rem; font-weight: bold; margin-top: 6px;">OFFICIAL INVOICE</p>
